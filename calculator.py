@@ -14,7 +14,7 @@ def evaluate_calculation():
     global calculation
     try:
         result = str(eval(calculation))
-        calculation = ""
+        calculation = result
         text_result.delete(1.0, "end")
         text_result.insert(1.0, result)
     except:
